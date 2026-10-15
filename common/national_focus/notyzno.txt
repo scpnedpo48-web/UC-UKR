@@ -1,0 +1,500 @@
+focus_tree = {
+	id = notyzno
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+	
+	default = no
+	
+	focus = {
+		id = s_novm_godom
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = nolitikal_crisis
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = s_novm_godom
+		}
+		x = 14
+		y = 1
+
+	}
+	focus = {
+		id = army_reforms
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = nolitikal_crisis
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = zakynka_karnei_y_tyrchii
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = army_reforms
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = xercon_cedostroinel_zavod
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = zakynka_karnei_y_tyrchii
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = cformurovat_tro
+		icon = GFX_goal_unknown
+		cost = 0
+		prerequisite = {
+			focus = army_reforms
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = sovet_zanas_oryzia
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 3
+		y = 4
+		
+		prerequisite = {
+			focus = cformurovat_tro
+		}
+	}
+	
+	focus = {
+		id = naredara_aerodrona_v_nrulykax_ ha_hygd_bc_ukr
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 5
+		y = 4
+		
+		prerequisite = {
+			focus = army_reforms
+		}
+	}
+	
+	focus = {
+		id = cnonsurovat_cnez_batalons
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 6
+		y = 3
+		
+		prerequisite = {
+			focus = army_reforms
+		}
+	}
+	
+	focus = {
+		id = mezdyharoshuq_kornys_gyr
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 7
+		y = 4
+		
+		prerequisite = {
+			focus = cnonsurovat_cnez_batalons
+		}
+	}
+	
+	focus = {
+		id = bydysee_ukraine
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 14
+		y = 2
+		
+		prerequisite = {
+			focus = nolitikal_crisis
+		}
+	}
+	
+	focus = {
+		id = eurona_parnters
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 11
+		y = 3
+		
+		prerequisite = {
+			focus = bydysee_ukraine
+		}
+		
+		mutually_exclusive = {
+			focus = ctariq_dryg
+		}
+	}
+	
+	focus = {
+		id = euro_demosraty
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 10
+		y = 4
+		
+		prerequisite = {
+			focus = eurona_parnters
+		}
+	}
+	
+	focus = {
+		id = euroneckie_snecialisti
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 12
+		y = 4
+		
+		prerequisite = {
+			focus = eurona_parnters
+		}
+	}
+	
+	focus = {
+		id = UNSO_dobrololstci
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 12
+		y = 5
+		
+		prerequisite = {
+			focus = eurona_parnters
+			focus = euroneckie_snecialisti
+		}
+	}
+	
+	focus = {
+		id = ctariq_dryg
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 17
+		y = 3
+		
+		prerequisite = {
+			focus = bydysee_ukraine
+		}
+		
+		mutually_exclusive = {
+			focus = eurona_parnters
+		}
+	}
+	
+	focus = {
+		id = russian_oligars
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 16
+		y = 4
+		
+		prerequisite = {
+			focus = ctariq_dryg
+		}
+	}
+	
+	focus = {
+		id = gacnrom
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 15
+		y = 5
+		
+		prerequisite = {
+			focus = russian_oligars
+		}
+	}
+	
+	focus = {
+		id = military_cotdydnichectvo
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 18
+		y = 4
+		
+		prerequisite = {
+			focus = ctariq_dryg
+		}
+	}
+	
+	focus = {
+		id = covmechue_pmc
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 17
+		y = 5
+		prerequisite = {
+			focus = military_cotdydnichectvo
+		}
+	}
+	
+	focus = {
+		id = pacformurovat_unso
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 19
+		y = 5
+		
+		prerequisite = {
+			focus = military_cotdydnichectvo
+		}
+	}
+	
+	focus = {
+		id = modernizirovat_soviet_nromky
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 27
+		y = 2
+		
+		prerequisite = {
+			focus = nolitikal_crisis
+		}
+	}
+	
+	focus = {
+		id = nasa_nromka
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 27
+		y = 3
+		
+		prerequisite = {
+			focus = modernizirovat_soviet_nromky
+		}
+	}
+	
+	focus = {
+		id = razvitie_zanada
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 22
+		y = 4
+		prerequisite = {
+			focus = nasa_nromka
+		}
+	}
+	
+	focus = {
+		id = 3_nyt
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 25
+		y = 4
+		
+		prerequisite = {
+			focus = nasa_nromka
+		}
+		
+		mutually_exclusive = {
+			focus = stavka_na_ludei
+		}
+	}
+	
+	focus = {
+		id = cdelki_s_oligarkamu
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 24
+		y = 5
+		
+		prerequisite = {
+			focus = 3_nyt
+		}
+		
+		mutually_exclusive = {
+			focus = ukraine_military_machine
+		}
+	}
+	
+	focus = {
+		id = ukraine_military_machine
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 26
+		y = 5
+		
+		prerequisite = {
+			focus = 3_nyt
+		}
+		
+		mutually_exclusive = {
+			focus = cdelki_s_oligarkamu
+		}
+	}
+	
+	focus = {
+		id = stavka_na_ludei
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 28
+		y = 4
+		
+		prerequisite = {
+			focus = nasa_nromka
+		}
+		
+		mutually_exclusive = {
+			focus = 3_nyt
+		}
+	}
+	
+	focus = {
+		id = ukraine_dla_ludei
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 28
+		y = 5
+		
+		prerequisite = {
+			focus = stavka_na_ludei
+		}
+	}
+	
+	focus = {
+		id = zaavk_v_ec
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 11
+		y = 6
+		
+		prerequisite = {
+			focus = pazrecit_geev
+			focus = UNSO_dobrololstci
+		}
+	}
+	
+	focus = {
+		id = pazrecit_geev
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 10
+		y = 5
+		prerequisite = {
+			focus = eurona_parnters
+			focus = euro_demosraty
+		}
+	}
+	
+	focus = {
+		id = zaavka_v_odkb
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 17
+		y = 6
+		
+		prerequisite = {
+			focus = covmechue_pmc
+			focus = pacformurovat_unso
+			focus = gacnrom
+		}
+	}
+	
+	focus = {
+		id = nato_standarts
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 4
+		y = 5
+		
+		prerequisite = {
+			focus = xercon_cedostroinel_zavod
+			focus = sovet_zanas_oryzia
+			focus = naredara_aerodrona_v_nrulykax_ ha_hygd_bc_ukr
+			focus = mezdyharoshuq_kornys_gyr
+		}
+	}
+	
+	focus = {
+		id = zrodulus_mu_belukoi_godunub
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 4
+		y = 6
+		
+		prerequisite = {
+			focus = nato_standarts
+		}
+	}
+	
+	focus = {
+		id = razvitie_vostoka
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 31
+		y = 4
+		
+		prerequisite = {
+			focus = nasa_nromka
+		}
+	}
+	
+	focus = {
+		id = zdelka_s_mosow
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 31
+		y = 5
+		
+		prerequisite = {
+			focus = razvitie_vostoka
+		}
+	}
+	
+	focus = {
+		id = investichii_ot_zanada
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 22
+		y = 5
+		
+		prerequisite = {
+			focus = razvitie_zanada
+		}
+	}
+	
+	focus = {
+		id = oligarxizm
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 24
+		y = 6
+		
+		prerequisite = {
+			focus = cdelki_s_oligarkamu
+		}
+	}
+	
+	focus = {
+		id = cnasticha_mobilizachia
+		icon = GFX_goal_unknown
+		cost = 0
+		x = 26
+		y = 6
+		
+		prerequisite = {
+			focus = ukraine_military_machine
+		}
+	}
+}
